@@ -1,0 +1,38 @@
+{
+  "name": "@fipulse/fipulse-charts",
+  "version": "0.1.0",
+  "description": "Fipulse charts SDK (React)",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@fipulse/fipulse-sdk": "^0.1.0",
+    "lightweight-charts": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.0",
+    "typescript": "~6.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
