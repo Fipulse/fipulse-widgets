@@ -1,5 +1,5 @@
 {
-  "name": "@fipulse/fipulse-charts",
+  "name": "@fipulse/fipulse-widgets",
   "version": "0.1.0",
   "description": "Fipulse charts SDK (React)",
   "type": "module",
